@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "609889244004",
+    "firebase_url": "https://led-controller-b8fea.firebaseio.com",
+    "project_id": "led-controller-b8fea",
+    "storage_bucket": "led-controller-b8fea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:609889244004:android:e9b13c5aec9e4c503b6071",
+        "android_client_info": {
+          "package_name": "com.lqcuongnd.ledcontroller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "609889244004-56i9sqoeqnu11s12p7u2em0igk6dil96.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnaGtR7P1uUpGDH_Oy8FiFHv6qFFuwCUQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "609889244004-56i9sqoeqnu11s12p7u2em0igk6dil96.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

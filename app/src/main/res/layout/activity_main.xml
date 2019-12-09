@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/br"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/btnAbout"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/about"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="55dp"
+        />
+
+    <ImageView
+        android:id="@+id/btnTurn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/off"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/gif"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:cropToPadding="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="-30dp"
+        android:visibility="gone"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="2836-loading-color.json"
+        app:lottie_loop="true"
+        app:lottie_speed="1.5" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lotOn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:cropToPadding="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="-30dp"
+        android:visibility="gone"
+
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="500-lamp.json"
+        app:lottie_loop="true"
+        app:lottie_speed="2" />
+
+    <LinearLayout
+        android:id="@+id/value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnTurn"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Sensor value: "
+            android:textSize="23dp"
+            android:textColor="@android:color/holo_blue_dark"
+            />
+
+        <TextView
+            android:id="@+id/lblValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="0"
+            android:textSize="23dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/value"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Max val to turn light on: "
+            android:textSize="18dp"
+            android:textColor="@android:color/holo_blue_dark"
+            />
+
+        <TextView
+            android:id="@+id/lblMax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="23dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btnAuto"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/auto_off"
+        android:layout_alignParentBottom="true"
+        />
+
+    <ImageView
+        android:id="@+id/btnSetting"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/setting"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>
